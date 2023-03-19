@@ -365,7 +365,7 @@ p {
   width: 100%;
   left: 0;
   bottom: 0;
-  color: white;
+  color: #000000;
   font-family: "Archivo", cursive;
 }
 
@@ -419,7 +419,7 @@ img {
 .homepage-container .headline-intro {
   font-size: 5vw;
   text-align: center;
-  color: white;
+  color: #000000;
   text-transform: uppercase;
   font-family: "Archivo", cursive;
 }

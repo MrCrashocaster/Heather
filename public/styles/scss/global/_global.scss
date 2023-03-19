@@ -4,6 +4,8 @@
 
 // COLORS
 
+$white: #FFFFFF;
+$black: #000000;
 $light-tan: #FFF7F4;
 $light-green: #D6F9B5;
 $light-pink: #F6D3F1;
@@ -11,7 +13,7 @@ $light-blue: #E1FEF9;
 
 // FONTS
 
-$beba: 'Archivo', cursive;
+$archivo: 'Archivo', cursive;
 
 
 html {
@@ -120,7 +122,7 @@ p {
 }
 
 .navbar li a {
-  font-family: $beba;
+  font-family: $archivo;
   font-size: 1.05em;
   color: white;
   display: inline-block;
@@ -287,8 +289,8 @@ p {
   width: 100%;
   left:0;
   bottom:0;
-  color: white;
-  font-family: $beba;
+  color: $black;
+  font-family: $archivo;
 }
 
 /* END OF FOOTER */

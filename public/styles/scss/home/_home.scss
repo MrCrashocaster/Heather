@@ -2,9 +2,9 @@
     .headline-intro {
         font-size: 5vw;
         text-align: center;
-        color: white;
+        color: $black;
         text-transform: uppercase;
-        font-family: $beba;
+        font-family: $archivo;
 
         @include tablet {
             font-size: 15vw;
