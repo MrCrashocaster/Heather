@@ -97,8 +97,14 @@ h2, .h2 {
 
 h3, .h3 {
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 6vw;
   line-height: 1.4em;
+  margin: 3% 0;
+}
+@media (max-width: 500px) {
+  h3, .h3 {
+    font-size: 8vw;
+  }
 }
 
 h4, .h4 {
@@ -106,7 +112,6 @@ h4, .h4 {
   font-size: 2.1rem;
   text-transform: uppercase;
   line-height: 1.6em;
-  margin: 1.25em 0;
 }
 
 h5, .h5 {
@@ -120,14 +125,18 @@ h6, .h6 {
   font-size: 1.7rem;
   text-transform: uppercase;
   line-height: 1.6em;
-  margin: 1.25em 0;
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   line-height: 1.7em;
   font-weight: 400;
-  line-height: 2.2em;
+  line-height: 1;
+}
+@media (max-width: 500px) {
+  p {
+    font-size: 3vw;
+  }
 }
 
 /* FOOTER */
@@ -148,35 +157,6 @@ p {
 /*************************************************
  CSS RESERT - ERIC MEYER'S v2.0
 *************************************************/
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  padding: 0;
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after, q:before, q:after {
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 input, input:focus, :focus {
   outline: 0;
 }
@@ -191,18 +171,76 @@ img {
 }
 
 /* IMPORT FONTS */
-.homepage-container .headline-intro {
+.homepage-container {
+  height: 100vh;
+}
+.homepage-container .wrapper {
+  width: 90%;
+  margin: 0 auto;
+  height: auto;
+}
+.homepage-container .wrapper .headline-intro-container {
+  margin-top: 3%;
+}
+.homepage-container .wrapper .headline-intro-container .headline-intro {
   font-size: 5vw;
-  text-align: center;
   color: #000000;
   text-transform: uppercase;
   font-family: "Archivo", cursive;
 }
-.homepage-container .headline-intro.animate__animated.animate__fadeIn {
+.homepage-container .wrapper .headline-intro-container .headline-intro.animate__animated.animate__fadeIn {
   --animate-duration: 5s;
 }
-@media (max-width: 768px) {
-  .homepage-container .headline-intro {
+@media (max-width: 500px) {
+  .homepage-container .wrapper .headline-intro-container .headline-intro {
     font-size: 15vw;
   }
+}
+.homepage-container .link-container {
+  display: flex;
+  column-gap: 3%;
+  margin-top: calc(100vh - 55% - (5vw - 3% - 6vw - 3% - 7%));
+}
+@media (max-width: 500px) {
+  .homepage-container .link-container {
+    flex-direction: column;
+    margin-top: calc(100vh - 150% - (8vw - 3% - 3vw - 3% - 7% - 2em));
+    row-gap: 2em;
+  }
+}
+.homepage-container .link-container a {
+  width: 50%;
+  height: auto;
+  background-color: #D6F9B5;
+  border-radius: 30px;
+}
+@media (max-width: 500px) {
+  .homepage-container .link-container a {
+    width: 100%;
+  }
+  .homepage-container .link-container a:hover {
+    width: 100% !important;
+  }
+}
+.homepage-container .link-container a.animate__animated.animate__fadeIn {
+  --animate-duration: 10s;
+}
+.homepage-container .link-container a:hover {
+  width: 53%;
+  height: auto;
+  cursor: pointer;
+}
+.homepage-container .link-container a .single-link-container .single-link-content {
+  padding: 7%;
+  display: flex;
+  flex-direction: column;
+}
+.homepage-container .link-container a .single-link-container .single-link-content p {
+  max-width: 90%;
+}
+.homepage-container .link-container a:last-child {
+  background-color: #F6D3F1;
+}
+.homepage-container .link-container a:last-child.animate__animated.animate__fadeIn {
+  --animate-duration: 25s;
 }/*# sourceMappingURL=main.css.map */

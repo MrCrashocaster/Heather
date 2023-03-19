@@ -1,17 +1,86 @@
 .homepage-container {
-    .headline-intro {
-        font-size: 5vw;
-        text-align: center;
-        color: $black;
-        text-transform: uppercase;
-        font-family: $archivo;
+    height: 100vh;
 
-        &.animate__animated.animate__fadeIn {
-            --animate-duration: 5s;
+    .wrapper {
+        width: 90%;
+        margin: 0 auto;
+        height: auto;
+
+        .headline-intro-container {
+            margin-top: 3%;
+
+            .headline-intro {
+                font-size: 5vw;
+                color: $black;
+                text-transform: uppercase;
+                font-family: $archivo;
+
+                &.animate__animated.animate__fadeIn {
+                    --animate-duration: 5s;
+                }
+
+                @include small-mobile {
+                    font-size: 15vw;
+                }
+            }
+        }
+    }
+
+    .link-container {
+        display: flex;
+        column-gap: 3%;
+        margin-top: calc(100vh - 55% - (5vw - 3% - 6vw - 3% - 7%));
+
+        @include small-mobile {
+            flex-direction: column;
+            margin-top: calc(100vh - 150% - (8vw - 3% - 3vw - 3% - 7% - 2em));
+            row-gap: 2em;
         }
 
-        @include tablet {
-            font-size: 15vw;
+        a {
+            width: 50%;
+            height: auto;
+            background-color: $light-green;
+            border-radius: 30px;
+
+            @include small-mobile {
+                width: 100%;
+
+                &:hover {
+                    width: 100% !important;
+                }
+            }
+
+            &.animate__animated.animate__fadeIn {
+                --animate-duration: 10s;
+            }
+
+            &:hover {
+                width: 53%;
+                height: auto;
+                cursor: pointer;
+            }
+
+            .single-link-container {
+                .single-link-content {
+                    padding: 7%;
+                    display: flex;
+                    flex-direction: column;
+
+                    p {
+                        max-width: 90%;
+                    }
+                }
+                
+            }
+
+            &:last-child {
+                background-color: $light-pink;
+
+                &.animate__animated.animate__fadeIn {
+                    --animate-duration: 25s;
+                }
+            }
         }
     }
 }
