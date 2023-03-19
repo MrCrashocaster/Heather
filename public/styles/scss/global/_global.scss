@@ -15,6 +15,64 @@ $light-blue: #E1FEF9;
 
 $archivo: 'Archivo', cursive;
 
+// ANIMATION
+
+.fade-down {
+	position: relative;
+  opacity: 0;
+	top: -5em;
+  -webkit-transition: all 1200ms linear;
+  -o-transition: all 1200ms linear;
+  transition: all 1200ms linear;
+
+  &.show {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.fade-up {
+  position: relative;
+  opacity: 0;
+  bottom: -5em;
+  -webkit-transition: all 1200ms linear;
+  -o-transition: all 1200ms linear;
+  transition: all 1200ms linear;
+
+  &.show {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+.fade-left {
+  position: relative;
+  right: -5em;
+  opacity: 0;
+  -webkit-transition: all 1200ms linear;
+  -o-transition: all 1200ms linear;
+  transition: all 1200ms linear;
+
+  &.show {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+.fade-right {
+  position: relative;
+  left: -5em;
+  opacity: 0;
+  -webkit-transition: all 1200ms linear;
+  -o-transition: all 1200ms linear;
+  transition: all 1200ms linear;
+
+  &.show {
+    left: 0;
+    opacity: 1;
+  }
+}
+
 
 html {
   width: 100%;
