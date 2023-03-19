@@ -2,6 +2,15 @@
  GLOBAL STYLES
 *************************************************/
 
+// COLORS
+
+$light-tan: #FFF7F4;
+$light-green: #D6F9B5;
+$light-pink: #F6D3F1;
+$light-blue: #E1FEF9;
+
+// FONTS
+
 $beba: 'Archivo', cursive;
 
 
@@ -19,6 +28,7 @@ body {
   font-weight: 400;
   line-height: 1em;
   overflow-x: hidden;
+  background-color: $light-green;
 
   &.fixed {
     overflow: hidden;
@@ -93,23 +103,7 @@ p {
     margin-top: 30px;
 }
 
-// COLORS
-
-$light-tan: #FFF7F4;
-$light-green: #D6F9B5;
-$light-pink: #F6D3F1;
-$light-blue: #E1FEF9;
-
 // NAV BAR 
-
-body {
-  background-color: $light-green;
-}
-
-.container {
-  margin: auto;
-  width: 90%;
-}
 
 .navbar {
   margin: auto;
