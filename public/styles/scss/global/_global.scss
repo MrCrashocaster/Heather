@@ -147,7 +147,7 @@ p {
 
 /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("navbar_name"). Show the list item that contains the link to open and close the topnav (li.icon) */
 
-@media screen and (max-width:875px) {
+@include tablet {
   .navbar li.navbar_items {
     display: none;
   }
@@ -161,7 +161,7 @@ p {
 
 /* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon. This class makes the navbar look good on small screens */
 
-@media screen and (max-width:875px) {
+@include tablet {
   .navbar.responsive {
     position:fixed;
     width: 100%;

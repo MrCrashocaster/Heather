@@ -1,4 +1,7 @@
 /* IMPORT CLASSES */ /*************************************************
+ MEDIA QUERY DEFINITIONS
+*************************************************/
+/*************************************************
  GLOBAL STYLES
 *************************************************/
 @import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
@@ -128,7 +131,7 @@ p {
 
 /* NAV BAR */
 /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("navbar_name"). Show the list item that contains the link to open and close the topnav (li.icon) */
-@media screen and (max-width: 875px) {
+@media (max-width: 768px) {
   .navbar li.navbar_items {
     display: none;
   }
@@ -140,7 +143,7 @@ p {
   }
 }
 /* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon. This class makes the navbar look good on small screens */
-@media screen and (max-width: 875px) {
+@media (max-width: 768px) {
   .navbar.responsive {
     position: fixed;
     width: 100%;
@@ -155,6 +158,146 @@ p {
     -ms-animation: fadeIn linear 4s;
   }
   @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 0.1;
+    }
+    20% {
+      opacity: 0.2;
+    }
+    30% {
+      opacity: 0.3;
+    }
+    40% {
+      opacity: 0.4;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    60% {
+      opacity: 0.6;
+    }
+    70% {
+      opacity: 0.7;
+    }
+    80% {
+      opacity: 0.8;
+    }
+    90% {
+      opacity: 0.9;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 0.1;
+    }
+    20% {
+      opacity: 0.2;
+    }
+    30% {
+      opacity: 0.3;
+    }
+    40% {
+      opacity: 0.4;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    60% {
+      opacity: 0.6;
+    }
+    70% {
+      opacity: 0.7;
+    }
+    80% {
+      opacity: 0.8;
+    }
+    90% {
+      opacity: 0.9;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 0.1;
+    }
+    20% {
+      opacity: 0.2;
+    }
+    30% {
+      opacity: 0.3;
+    }
+    40% {
+      opacity: 0.4;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    60% {
+      opacity: 0.6;
+    }
+    70% {
+      opacity: 0.7;
+    }
+    80% {
+      opacity: 0.8;
+    }
+    90% {
+      opacity: 0.9;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-o-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 0.1;
+    }
+    20% {
+      opacity: 0.2;
+    }
+    30% {
+      opacity: 0.3;
+    }
+    40% {
+      opacity: 0.4;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    60% {
+      opacity: 0.6;
+    }
+    70% {
+      opacity: 0.7;
+    }
+    80% {
+      opacity: 0.8;
+    }
+    90% {
+      opacity: 0.9;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-ms-keyframes fadeIn {
     0% {
       opacity: 0;
     }
@@ -265,20 +408,23 @@ input, input:focus, :focus {
 
 img {
   -moz-user-select: none; /* These user-select properties are inheritable, used to prevent text selection */
-  -webkit-user-select: none; /* From IE10 only */
+  -webkit-user-select: none;
+  -ms-user-select: none; /* From IE10 only */
   user-select: none; /* Not valid CSS yet, as of July 2012 */
   -webkit-user-drag: none; /* Prevents dragging of images/divs etc */
   vertical-align: middle;
 }
 
-/* IMPORT FONTS */ /*************************************************
- MEDIA QUERY DEFINITIONS
-*************************************************/
+/* IMPORT FONTS */
 .homepage-container .headline-intro {
-  font-size: 5rem;
+  font-size: 5vw;
   text-align: center;
   color: white;
   text-transform: uppercase;
   font-family: "Archivo", cursive;
-  letter-spacing: 1.2rem;
+}
+@media (max-width: 768px) {
+  .homepage-container .headline-intro {
+    font-size: 15vw;
+  }
 }/*# sourceMappingURL=main.css.map */
