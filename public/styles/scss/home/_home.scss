@@ -29,25 +29,28 @@
     .link-container {
         display: flex;
         column-gap: 3%;
-        margin-top: calc(100vh - 55% - (5vw - 3% - 6vw - 3% - 7%));
+        margin-top: calc(100vh - (6vw + 3%) - 50vh);
+        align-items: center;
 
         @include small-mobile {
             flex-direction: column;
-            margin-top: calc(100vh - 150% - (8vw - 3% - 3vw - 3% - 7% - 2em));
+            margin-top: calc(50vh - (8vw + 3%) - 35vh);
             row-gap: 2em;
         }
 
         a {
             width: 50%;
-            height: auto;
+            height: 45vh;
             background-color: $light-green;
             border-radius: 30px;
 
             @include small-mobile {
                 width: 100%;
+                height: 30vh;
 
                 &:hover {
                     width: 100% !important;
+                    height: 30vh !important;
                 }
             }
 
